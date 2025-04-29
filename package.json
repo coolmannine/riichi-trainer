@@ -1,11 +1,12 @@
 {
   "name": "riichi-trainer",
-  "version": "3.0.0",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://coolmannine.github.io/riichi-trainer",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "cross-env": "^5.2.1",
+    "gh-pages": "^6.3.0",
     "i18next": "^17.3.1",
     "i18next-browser-languagedetector": "^3.1.1",
     "jquery": "^3.5.1",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
